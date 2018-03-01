@@ -5,7 +5,8 @@ COUT = $fded
 
         .byt $01        ; Load 1 sector at boot
 
-        ldx #$00        ; Print "HELLO WORLD"
+; Print "HELLO WORLD"
+        ldx #$00
 loop    lda message,x
         beq done
         ora #$80        ; Use regular letters rather than flashing
